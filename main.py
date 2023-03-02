@@ -1,14 +1,13 @@
 from pytube import YouTube
 from pytube import Playlist
 
-p = Playlist('https://www.youtube.com/watch?v=LKQc7deraKo&list=PLhlzPAwSE2kIExse-BctOdM2XnrJTGEo7')
+p = Playlist('')
 
 for video in p.videos:
     video.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download()
 print('funciona')
 
-
-
+#en caso de querer descargar un video solo,comentar lo de la playlist y descomentar lo de a continuación
 
 #link = input("Enter the link: ")
 #yt = YouTube("https://www.youtube.com/watch?v=aFqTjk3kcEw&ab_channel=Garajedeideas")
