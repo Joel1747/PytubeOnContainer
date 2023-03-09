@@ -66,5 +66,19 @@ pytube==12.1.2
 PyChromecast
 ~~~
 
-## Descargar Imagen
-https://hub.docker.com/r/joelperez23/proyectoyoutube/tags
+## Subir imagen a dockerhub
+Debes tener una cuenta  crear un repositorio, una vez tengas eso, abrirás un terminal en el que pondras 
+~~~
+docker login
+~~~
+Una vez te logues con tu cuenta en el terminal lo siguiente como indica en la pagina es hacer un
+~~~
+docker tag youtubeimagen:buena joelperez23/proyectoyoutubebueno
+~~~
+en el que primero seleccionas la imagen y luego le das un alias y por ultimo haces un push con
+~~~
+docker push joelperez23/proyectoyoutubebueno
+~~~
+Llamando al alias que le has dado y te subira la imagen a dockerhub
+### Descargar Imagen
+https://hub.docker.com/r/joelperez23/proyectoyoutubebueno/tags
